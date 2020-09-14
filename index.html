@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Catalog</title>
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--css link  -->
+    <link rel="stylesheet" href="style.css">  
+    
+
+</head>
+<body>
+    <div class="container">
+      <nav class="navbar navbar-dark bg-dark d-flex">
+        <h1 class="navbar-brand m-auto">Product-Catalog</h1>
+        <input type="text" name="filter" id="filter" class="form-control m-3" placeholder="filter your product...">
+      </nav>
+      
+      <div class="card card-body">
+        <span id="msg" ></span>
+        <ul class="list-group collection">
+          
+          <!-- <li class="list-group-item collection-item" id="product-0">
+            <strong></strong>
+            <span class="price"></span>
+            <i class="fa fa-trash float-right" id="delete-btn"></i>
+          </li> -->
+          <!-- <li class="list-group-item collection-item">
+            <strong>Microphone-</strong>
+            <span class="price">$30</span>
+            <i class="fa fa-trash float-right"></i>
+          </li>
+          <li class="list-group-item collection-item">
+            <strong>Microphone-</strong>
+            <span class="price">$30</span>
+            <i class="fa fa-trash float-right"></i>
+          </li> -->
+        </ul>
+
+        <form action="#">
+
+          <div class="row mt-4">
+            <div class="col">
+              <input type="text" name="" id="product-name" placeholder="product-name" class="form-control product-name">
+            </div>
+
+            <div class="col">
+              <input type="text" name="" id="product-price" placeholder="product-price" class="form-control product-price">
+            </div>
+          </div>
+          <button class="btn btn-primary mt-3 btn-block add-product" id="submit-btn">Submit</button>
+        </form>
+      </div>
+        
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
